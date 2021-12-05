@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="navbar-collapse justify-content-between">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#profile">perfil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects">projetos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#experiences">experiência</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#repositories">repositórios github</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contents">conteúdo</a>
+                      </li>
+                    </ul>
+                    <div div="search-bar">
+                        <div class="input-icon-wrapper input-icon-left input-icon-right">
+                            <div class="input-group-prepend input-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <input type="text" class="form-control round-input" placeholder="Pesquisar">
+                            <div class="input-group-append input-icon">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </div>
+        <div id="body">
+
+                <!-- PERFIL -->
+                <div id="profile" class="section">
+                    <div class="section-body">
+                        <div id="profile-wrapper">
+                            <div id="avatar">
+
+                            </div>
+                            <div id="profile-container">
+                                <div id="profile-name" class="section-title">Bruno Duarte</div>
+                                <div id="profile-info">
+                                    <b>Objetivos:</b>
+                                    <span>
+                                        Desde a infância a curiosidade e desejo por novas experiências e conhecimentos norteia o meu modo de vida. Tendo um contato diário com a informática, a uso para desenvolver habilidades e me manter atualizado às novidades nos diversos ramos.
+                                        Com meus 8 anos, já fazia sites, na época apenas como um hobby, mas neste meu primeiro contato, percebi minha enorme paixão pela área e que este seria o rumo que seguiria. Desde então, constantemente venho desenvolvendo por conta própria projetos por diversão e outros confins profissionais, que me proporcionam novas habilidades e conhecimentos. 
+                                    </span>
+                                </div>
+                                <div class="social-buttons-wrapper">
+                                    <div class="social-button">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </div>
+                                    <div class="social-button">
+                                        <i class="fab fa-twitter-square"></i>
+                                    </div>
+                                    <div class="social-button">
+                                        <i class="fab fa-instagram-square"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJETOS -->
+                <div id="projects" class="section">
+                    <div class="section-body">
+                        <div class="section-title">
+                            Projetos
+                            <div class="dropdown">
+                                <button class="round-input form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categoria: TODOS
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Web Sites</a>
+                                <a class="dropdown-item" href="#">Arte Gráfica</a>
+                                <a class="dropdown-item" href="#">Podcast</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="projects-container" class="items-wrapper items-wrapper-horizontal">
+                            <a class="card" href="https://github.com/brunduartt/leds_esp8266">
+                                <div style="background-image: url('./resources/images/project1.gif');" class="card-img-background"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Controladora de LED em C com ESP8266</h5>
+                                    <p class="card-text">Programação da placa ESP8266 para atuar como uma controladora de fita de LED WS2812B.</p>
+                                </div>
+                            </a>
+                            <a class="card" href="https://github.com/brunduartt/stock-control">
+                                <div style="background-image: url('./resources/images/project2.png');" class="card-img-background"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sistema de Controle de Estoque</h5>
+                                    <p class="card-text">Sistema de controle de estoque desenvolvido usando Angular, Spring Boot e PostgreSQL.</p>
+                                </div>
+                            </a>
+                            <a class="card" href="https://github.com/brunduartt/icoleta">
+                                <div style="background-image: url('./resources/images/project3.png');" class="card-img-background"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">iColeta</h5>
+                                    <p class="card-text">Sistema para localização de coleta de materiais recicláveis desenvolvido para a matéria de Laboratório e Projeto de Sistemas</p>
+                                </div>
+                            </a>
+                            <a class="card" href="https://github.com/brunduartt/tp_redes_1/tree/master/batalha_naval">
+                                <div style="background-image: url('./resources/images/project4.png');" class="card-img-background"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Batalha Naval</h5>
+                                    <p class="card-text">Aplicação feita em Python para simular um jogo de batalha naval, onde um usuário se conecta e joga contra o servidor.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="load-button-container d-flex justify-content-end">
+                            <div class="load-button btn btn-primary">
+                                <i class="fa fa-plus">                          
+                                </i>
+                                <span>Carregar mais projetos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- EXPERIÊNCIAS -->
+                <div id="experiences" class="section">
+                    <div class="section-body">
+                        <div class="section-title">
+                            Experiências
+                        </div>
+                        <div id="experiences-container" class="items-wrapper items-wrapper-vertical">
+                            <div class="card">
+                                <div class="card-img-background" style="background-image: url('./resources/images/usecase-logo.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Estagiário</h5>
+                                    <p class="card-text">Prototipagem de telas e sistemas, desenvolvimento de sites com Angular, manuseamento de planilhas em Excel com VBA.</p>
+                                    <span class="experience-period">Período: 08/2018 até 04/2020</span>
+                                </div>                              
+                            </div>
+
+                            <div class="card">
+                                <div class="card-img-background" style="background-image: url('./resources/images/usecase-logo.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Desenvolvedor fullstack</h5>
+                                    <p class="card-text">Desenvolvimento de sites em Angular, Vue, React, aplicações mobile em Flutter e backend em Java (Spring Boot) e PostgreSQL.</p>
+                                    <span class="experience-period">Período: 04/2020 até o momento</span>
+                                </div>                              
+                            </div>
+                        </div>
+                        <div class="load-button-container d-flex justify-content-end">
+                            <div class="load-button btn btn-primary">
+                                <i class="fa fa-plus">                          
+                                </i>
+                                <span>Carregar mais experiências</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REPOSITÓRIOS -->
+                <div id="repositories" class="section">
+                    <div class="section-body">
+                        <div class="section-title">
+                            Repositórios GitHub
+                        </div>
+                        <div id="repositories-container" class="items-wrapper items-wrapper-horizontal">
+                            <a class="card" id="repository1" href="https://github.com/brunduartt/leds_esp8266">
+                                <div class="card-body">
+                                    <div class="repository-icon">
+                                        <i class="fa fa-folder"></i>
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-title">leds_esp8266</h5>
+                                        <div class="card-text">Repositório para código de controladora de LED em C usando ESP8266</div>
+                                        <b class="repository-date">Atualizado em 11/06/2021</b>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="card" href="https://github.com/brunduartt/stock-control">
+                                <div class="card-body">
+                                    <div class="repository-icon">
+                                        <i class="fa fa-folder"></i>
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-title">stock-control</h5>
+                                        <div class="card-text">Repositório para Sistema de Controle de Estoque</div>
+                                        <b class="repository-date">Atualizado em 25/07/2021</b>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="card" href="https://github.com/brunduartt/imgur-gallery">
+                                <div class="card-body">
+                                    <div class="repository-icon">
+                                        <i class="fa fa-folder"></i>
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-title">imgur-gallery</h5>
+                                        <div class="card-text">
+                                            Repositório para aplicativo Android simples para pesquisa e visualização de imagens do imgur
+                                        </div>
+                                        <b class="repository-date">Atualizado em 25/03/2021</b>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="load-button-container d-flex justify-content-end">
+                            <div class="load-button btn btn-primary">
+                                <i class="fa fa-plus">                          
+                                </i>
+                                <span>Carregar mais repositórios</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CONTEÚDOS -->
+                <div id="contents" class="section">
+                    <div class="section-body">
+                        <div class="section-title">
+                            Recomendação de Conteúdo
+                        </div>
+                        <div id="contents-container" class="items-wrapper items-wrapper-horizontal">
+                            <div class="card">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/TrdevFK_am4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <div class="video-info-wrapper">
+                                        <div class="video-title"><b>Vídeo:</b> An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Paper Explained)</div>
+                                        <div class="video-info"><b>Autor:</b> Yannic Kilcher</div>
+                                        <div class="video-info"><b>Ano:</b> 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/n4t_-NjY_Sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <div class="video-info-wrapper">
+                                        <div class="video-title"><b>Vídeo:</b> The Projects That Got Me Into Google (tips for software engineering projects)</div>
+                                        <div class="video-info"><b>Autor:</b> Clément Mihailescu</div>
+                                        <div class="video-info"><b>Ano:</b> 2019</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/181Nj060xMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <div class="video-info-wrapper">
+                                        <div class="video-title"><b>Vídeo:</b> i taught an AI to solve the trolley problem</div>
+                                        <div class="video-info"><b>Autor:</b> Answer in Progress</div>
+                                        <div class="video-info"><b>Ano:</b>2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-button-container d-flex justify-content-end">
+                            <div class="load-button btn btn-primary">
+                                <i class="fa fa-plus">                          
+                                </i>
+                                <span>Carregar mais recomendações</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="footer">
+            <footer>
+                <span class="copyright">Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas</span>
+                <div> <img class="puc-logo" src="./resources/images/puc-logo.png"></div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

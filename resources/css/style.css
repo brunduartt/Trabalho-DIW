@@ -1,0 +1,267 @@
+
+.section {
+    padding: 20px 10%;
+}
+.section-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: relative;
+    z-index: 999;
+    font-size: 12pt;
+}
+.round-input {
+    border-radius: 8px;
+}
+
+.input-icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.input-icon-wrapper input {
+    
+}
+
+.input-icon-wrapper .input-group-prepend {
+    margin-right: -25px;
+}
+
+.input-icon-wrapper .input-group-append {
+    margin-left: -25px;
+}
+
+.input-icon-left input {
+    padding-left: 30px;
+}
+.input-icon-right input {
+    padding-right: 30px;
+}
+
+.card {
+    min-width: 340px;
+}
+
+
+.items-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.items-wrapper-horizontal {
+    justify-content: space-between;
+}
+
+.items-wrapper-vertical {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+
+.load-button-container {
+    margin-top: 20px;
+}
+
+#profile-wrapper {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#profile-container {
+    flex: 1;
+    margin-left: 50px;
+    min-width: 340px;
+}
+
+#profile-info {
+    margin-bottom: 20px;
+}
+
+
+#avatar {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #000;
+    background-image: url("../images/avatar.png");
+    background-size: cover;
+    border: 3px solid white;
+    background-position: center;
+}
+
+.social-buttons-wrapper {
+    display: flex;
+    font-size: 26pt;   
+}
+.social-button {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+#projects .card {
+    flex: 0.2;
+    width: 20%;
+}
+#projects .card-img-background {
+    width: 100%;
+    height: 200px
+}
+.card-img-background {
+    background-size: cover;
+    background-position: center
+}
+
+#contents .card {
+    flex: 0.3;
+    width: 30%;
+}
+
+.video-info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.video-title {
+    font-size: 15pt;
+}
+.video-container {
+    min-width: inherit;
+    position:relative;
+    padding-top:56.25%;
+}
+
+.video-container iframe {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/**
+    REPOSITORIES
+**/
+#repositories {
+    background: #ebebeb;
+}
+.repository-icon {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    font-size: 20pt;
+    background: #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+#repositories-container .card-body {
+    display: flex;
+}
+#repositories-container .card-info {
+    display: flex;
+    flex-direction: column;
+
+}
+#repositories-container .card-text {
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+#repositories .card {
+    flex: 0.3;
+    width: 30%;
+}
+
+.repository-date {
+    
+    font-weight: lighter;
+}
+
+#experiences .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+#experiences .card .card-body {
+    flex-grow: 999;
+    flex-basis: 340px;
+    min-width: inherit;
+}
+#experiences .card .card-img-background {
+    flex-grow: 1;
+    flex-basis: 230px;
+    background-position-y: 40%;
+}
+.experience-period {
+    font-weight: lighter;
+    font-size: 13pt;
+}
+#footer {
+    background: #ebebeb;
+    padding: 20px 10%;
+}
+footer {
+    min-width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16pt;
+    font-weight: lighter;
+}
+
+.puc-logo {
+    max-height: 60px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+ .items-wrapper .card {
+    margin: 10px 0px 0px 0px;
+ }  
+ .items-wrapper-horizontal {
+     justify-content: center;
+ }
+ #experiences .card .card-img-background {
+    min-height: 180px;
+ }
+ .section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section-body {
+    padding: 0px 10px;
+  }
+  #profile-container {
+      margin-left: 0px;
+      max-width: 340px;
+  }
+  #avatar {
+      height: 340px;
+      width: 340px;
+      margin-bottom: 20px;
+  }
+  footer .puc-logo {
+      display: none;
+  }
+  #footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  footer {
+    padding: 0px 10px;
+  }
+}
