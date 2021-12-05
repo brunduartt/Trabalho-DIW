@@ -242,7 +242,9 @@
             </div>
             <div id="search-content" class="items-wrapper">
             </div>
-            
+        </div>
+        <div id="scroll-top-button" class="btn-primary">
+            <i class="fa fa-chevron-up"></i>
         </div>
         <div id="footer">
             <footer>
@@ -259,6 +261,7 @@
             var actualPage = 1;
             var actualSearchQuery;
             var amountPerPage = 100;
+            var showingLoadPage = false;
             function loadRepositories() {
                 $('#repositories-container').html("")
                 $.get(`https://api.github.com/users/${userName}/repos`, function(data) {
@@ -370,6 +373,7 @@
                 }
             }
             function showSearchPage(show) {
+                showingLoadPage = show;
                 var searchPage = $("#search-page");
                 var profilePage = $("#profile-page");
                 if(show) {
@@ -381,9 +385,22 @@
                 }
                 
             }
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
             $(window).on('hashchange', function(e){
                 console.log(e);
                 showSearchPage(loading);
+            });
+            $( window ).scroll(function() {
+                var doc = document.documentElement;
+                var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+                if(top > $(window).height()*0.2) {
+                    $( "#scroll-top-button" ).addClass('visible');
+                } else {
+                    $( "#scroll-top-button" ).removeClass('visible');
+                }
+                
             });
             $(document).ready(function() {
                loadUser();
@@ -400,6 +417,9 @@
                $("#back-page-button").on("click", function(e) {
                     backPage();
                });
+               $("#scroll-top-button").on("click", function(e) {
+                   scrollToTop();
+               })
             });
         </script>
     </body>

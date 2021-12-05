@@ -306,14 +306,28 @@ Search Page
     border-radius: 3px;
 }
 .pagination-button {
+    cursor: pointer;
     background: rgb(207,207,207);
     background: linear-gradient(0deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 100%);
-    
 }
 .current-page {
     margin: 0px 5px;
 }
-
+#scroll-top-button {
+    bottom: -200px;
+    border-radius: 50%;
+    height: 35px;
+    position: fixed;
+    width: 35px;
+    display: flex;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+#scroll-top-button.visible {
+    bottom: 10px;
+}
 @media screen and (min-width: 360px) and (max-width: 768px) {
     .items-wrapper .card {
        margin: 10px 0px 0px 0px;
@@ -350,7 +364,9 @@ Search Page
      footer {
        padding: 0px 10px;
      }
-   
+     #repositories-container {
+         justify-content: center;
+     }
      /*
        Search Page
      */
