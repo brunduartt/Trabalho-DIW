@@ -314,7 +314,8 @@
                 search();
             }
             function search(page) {
-                if(page == 1) {
+                actualPage = page ?? actualPage;
+                if(actualPage == 1) {
                     $("#back-page-button").addClass("hidden");
                 } else {
                     $("#back-page-button").removeClass("hidden");
@@ -323,7 +324,7 @@
                     loading = true;
                     $("#loading").removeClass("hidden");
                     $.get(`https://api.github.com/search/repositories`,
-                        {'q': actualSearchQuery, 'page': page},
+                        {'q': actualSearchQuery, 'page': actualPage},
                         function(data) {
                            onCallback(data);
                         }
@@ -347,6 +348,7 @@
                 if(data.total_count < amountPerPage) {
                     $("#next-page-button").addClass("hidden");
                 }
+                $('#search-content').html("");
                 $("#pages").html(`<div class='current-page pagination-item'>${actualPage}</div>`);
                 for(var i = 0; i < items.length; i++) {
                     var repository = items[i];
