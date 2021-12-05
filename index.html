@@ -4,8 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
+         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="resources/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,22 +31,22 @@
                         <a class="nav-link" href="#contents">conteúdo</a>
                       </li>
                     </ul>
-                    <div div="search-bar">
-                        <div class="input-icon-wrapper input-icon-left input-icon-right">
-                            <div class="input-group-prepend input-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <input type="text" class="form-control round-input" placeholder="Pesquisar">
-                            <div class="input-group-append input-icon">
+                    <div id="search-bar">
+                        <div class="input-icon-wrapper input-icon-right">
+                            <input type="text" id="search-input" class="form-control round-input" placeholder="Pesquisar">
+                            <div class="input-group-append input-icon" id="clear-button">
                                 <i class="fa fa-times"></i>
                             </div>
+                        </div>
+                        <div class="btn btn-primary" id="search-button">
+                            <i class="fa fa-search"></i>
                         </div>
                     </div>
                 </div>
               </nav>
         </div>
-        <div id="body">
-
+        <div id="profile-page">
+                
                 <!-- PERFIL -->
                 <div id="profile" class="section">
                     <div class="section-body">
@@ -85,7 +84,7 @@
                     <div class="section-body">
                         <div class="section-title">
                             Projetos
-                            <div class="dropdown">
+                            <!--div class="dropdown">
                                 <button class="round-input form-control dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Categoria: TODOS
                                 </button>
@@ -94,7 +93,7 @@
                                 <a class="dropdown-item" href="#">Arte Gráfica</a>
                                 <a class="dropdown-item" href="#">Podcast</a>
                                 </div>
-                            </div>
+                            </div-->
                         </div>
                         <div id="projects-container" class="items-wrapper items-wrapper-horizontal">
                             <a class="card" href="https://github.com/brunduartt/leds_esp8266">
@@ -125,13 +124,6 @@
                                     <p class="card-text">Aplicação feita em Python para simular um jogo de batalha naval, onde um usuário se conecta e joga contra o servidor.</p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="load-button-container d-flex justify-content-end">
-                            <div class="load-button btn btn-primary">
-                                <i class="fa fa-plus">                          
-                                </i>
-                                <span>Carregar mais projetos</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,13 +156,6 @@
                                 </div>                              
                             </div>
                         </div>
-                        <div class="load-button-container d-flex justify-content-end">
-                            <div class="load-button btn btn-primary">
-                                <i class="fa fa-plus">                          
-                                </i>
-                                <span>Carregar mais experiências</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -180,55 +165,7 @@
                         <div class="section-title">
                             Repositórios GitHub
                         </div>
-                        <div id="repositories-container" class="items-wrapper items-wrapper-horizontal">
-                            <a class="card" id="repository1" href="https://github.com/brunduartt/leds_esp8266">
-                                <div class="card-body">
-                                    <div class="repository-icon">
-                                        <i class="fa fa-folder"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="card-title">leds_esp8266</h5>
-                                        <div class="card-text">Repositório para código de controladora de LED em C usando ESP8266</div>
-                                        <b class="repository-date">Atualizado em 11/06/2021</b>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="card" href="https://github.com/brunduartt/stock-control">
-                                <div class="card-body">
-                                    <div class="repository-icon">
-                                        <i class="fa fa-folder"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="card-title">stock-control</h5>
-                                        <div class="card-text">Repositório para Sistema de Controle de Estoque</div>
-                                        <b class="repository-date">Atualizado em 25/07/2021</b>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="card" href="https://github.com/brunduartt/imgur-gallery">
-                                <div class="card-body">
-                                    <div class="repository-icon">
-                                        <i class="fa fa-folder"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="card-title">imgur-gallery</h5>
-                                        <div class="card-text">
-                                            Repositório para aplicativo Android simples para pesquisa e visualização de imagens do imgur
-                                        </div>
-                                        <b class="repository-date">Atualizado em 25/03/2021</b>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="load-button-container d-flex justify-content-end">
-                            <div class="load-button btn btn-primary">
-                                <i class="fa fa-plus">                          
-                                </i>
-                                <span>Carregar mais repositórios</span>
-                            </div>
+                        <div id="repositories-container" class="items-wrapper">
                         </div>
                     </div>
                 </div>
@@ -280,15 +217,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="load-button-container d-flex justify-content-end">
-                            <div class="load-button btn btn-primary">
-                                <i class="fa fa-plus">                          
-                                </i>
-                                <span>Carregar mais recomendações</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
+        </div>
+        <div id="loading" class="hidden">
+            <div id="loader">
+
+            </div>
+        </div>
+        <div id="search-page" class="hidden">
+            <div id="search-header">
+                <div id="search-info"></div>
+                <div id="pagination">
+                    <div id="back-page-button" class="pagination-button pagination-item">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div id="pages">
+    
+                    </div>
+                    <div id="next-page-button" class="pagination-button pagination-item">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="search-content" class="items-wrapper">
+            </div>
+            
         </div>
         <div id="footer">
             <footer>
@@ -296,8 +250,155 @@
                 <div> <img class="puc-logo" src="./resources/images/puc-logo.png"></div>
             </footer>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            var userName = "brunduartt";
+            var loading = false;
+            var actualPage = 1;
+            var actualSearchQuery;
+            var amountPerPage = 100;
+            function loadRepositories() {
+                $('#repositories-container').html("")
+                $.get(`https://api.github.com/users/${userName}/repos`, function(data) {
+                    console.log(data);
+                    for(var i = 0; i < data.length; i++) {
+                        var repository = data[i];
+                        var date = moment(repository.updated_at);
+                        $('#repositories-container').append(
+                            `<a class="card" href="${repository.html_url}">
+                                <div class="card-body">
+                                    <div class="repository-icon">
+                                        <i class="fa fa-folder"></i>
+                                    </div>
+                                    <div class="card-info">
+                                        <h5 class="card-title">${repository.name}</h5>
+                                        <div class="card-text">${repository.description ?? ""}</div>
+                                        <b class="repository-date">Atualizado em ${date.format("DD/MM/YYYY")}</b>
+                                    </div>
+                                </div>
+                            </a>
+                        `)
+                    }
+                });
+            }
+            function loadUser() {
+                $.get(`https://api.github.com/users/${userName}`, function(data) {
+                    console.log(data);
+                    console.log(data.avatar_url);
+                    $('#avatar').css("background-image", "url('" + data.avatar_url + "')");
+
+                });
+            }
+            function doSearch() {
+                var searchValue = $("#search-input").val();
+                if(searchValue) {
+                    loading = true;
+                    $("#search-content").html("");
+                    actualPage = 1;
+                    actualSearchQuery = searchValue;
+                    var href = window.location.href.split("#")[0];
+                    window.history.pushState({ path: href }, '', href);
+                    showSearchPage(true);
+                    search(actualPage);
+                }
+            }
+
+            function nextPage() {
+                actualPage += 1;
+                search();
+            }
+            function backPage() {
+                actualPage -= 1;
+                search();
+            }
+            function search(page) {
+                if(page == 1) {
+                    $("#back-page-button").addClass("hidden");
+                } else {
+                    $("#back-page-button").removeClass("hidden");
+                }
+                if(actualSearchQuery) {
+                    loading = true;
+                    $("#loading").removeClass("hidden");
+                    $.get(`https://api.github.com/search/repositories`,
+                        {'q': actualSearchQuery, 'page': page},
+                        function(data) {
+                           onCallback(data);
+                        }
+                    ).fail(function() {
+                        onCallback();
+                    });
+                }
+            }
+            function onCallback(data) {
+                $("#loading").addClass("hidden");
+                loading = false;
+                if(data) {
+                   onSuccess(data);
+                } else {
+                    $("#search-info").html("<h3>Ocorreu um erro durante a pesquisa :(</h3><br><h5>Tente novamente mais tarde.</h5>");
+                }
+            }
+            function onSuccess(data) {
+                var items = data.items;
+                $("#search-info").html("Foram encontrados <b>" + data.total_count + "</b> resultados com o termo \"" + actualSearchQuery +"\"");
+                if(data.total_count < amountPerPage) {
+                    $("#next-page-button").addClass("hidden");
+                }
+                $("#pages").html(`<div class='current-page pagination-item'>${actualPage}</div>`);
+                for(var i = 0; i < items.length; i++) {
+                    var repository = items[i];
+                    var date = moment(repository.created_at);
+                    $('#search-content').append(
+                        `<a class="card" href="${repository.html_url}">
+                            <div class="card-body">
+                                <div class="repository-icon">
+                                    <i class="fa fa-folder"></i>
+                                </div>
+                                <div class="card-info">
+                                    <h5 class="card-title">${repository.name}</h5>
+                                    <div class="card-text">${repository.description ?? ""}</div>
+                                    <b class="repository-date">Criado em ${date.format("DD/MM/YYYY")}</b>
+                                </div>
+                            </div>
+                        </a>
+                    `)
+                }
+            }
+            function showSearchPage(show) {
+                var searchPage = $("#search-page");
+                var profilePage = $("#profile-page");
+                if(show) {
+                    searchPage.removeClass("hidden");
+                    profilePage.addClass("hidden"); 
+                } else {
+                    searchPage.addClass("hidden");
+                    profilePage.removeClass("hidden");
+                }
+                
+            }
+            $(window).on('hashchange', function(e){
+                console.log(e);
+                showSearchPage(loading);
+            });
+            $(document).ready(function() {
+               loadUser();
+               loadRepositories();
+               $("#clear-button").on("click", function(e) {
+                   $("#search-input").val("");
+               });
+               $("#search-button").on("click", function(e) {
+                    doSearch();
+               })
+               $("#next-page-button").on("click", function(e) {
+                    nextPage();
+               });
+               $("#back-page-button").on("click", function(e) {
+                    backPage();
+               });
+            });
+        </script>
     </body>
 </html>

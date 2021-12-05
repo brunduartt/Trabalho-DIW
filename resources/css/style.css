@@ -1,4 +1,8 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .section {
     padding: 20px 10%;
 }
@@ -96,7 +100,7 @@
     width: 320px;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #000;
-    background-image: url("../images/avatar.png");
+    /*background-image: url("../images/avatar.png");*/
     background-size: cover;
     border: 3px solid white;
     background-position: center;
@@ -111,7 +115,9 @@
     margin-right: 10px;
 }
 
-
+.hidden {
+    display: none !important;
+}
 #projects .card {
     flex: 0.2;
     width: 20%;
@@ -228,40 +234,127 @@ footer {
     max-height: 60px;
 }
 
+/*
+Search Page
+*/
+
+#search-bar {
+    display: flex;
+}
+#search-button {
+    margin-left: 5px;
+}
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(0 0 0 / 65%);
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+#search-page {
+    flex: 1;
+}
+
+#search-header {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#search-info {
+    font-size: 12px;
+}
+
+#search-content {
+    justify-content: space-around;
+}
+#search-content .card {
+    max-width: 340px;
+}
+
+#pagination {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 3px;
+}
+.pagination-button {
+    background: rgb(207,207,207);
+    background: linear-gradient(0deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 39%, rgba(255,255,255,1) 100%);
+    
+}
+.current-page {
+    margin: 0px 5px;
+}
+
 @media screen and (min-width: 360px) and (max-width: 768px) {
- .items-wrapper .card {
-    margin: 10px 0px 0px 0px;
- }  
- .items-wrapper-horizontal {
-     justify-content: center;
- }
- #experiences .card .card-img-background {
-    min-height: 180px;
- }
- .section {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .section-body {
-    padding: 0px 10px;
-  }
-  #profile-container {
-      margin-left: 0px;
-      max-width: 340px;
-  }
-  #avatar {
-      height: 340px;
-      width: 340px;
-      margin-bottom: 20px;
-  }
-  footer .puc-logo {
-      display: none;
-  }
-  #footer {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  footer {
-    padding: 0px 10px;
-  }
+    .items-wrapper .card {
+       margin: 10px 0px 0px 0px;
+    }  
+    .items-wrapper-horizontal {
+        justify-content: center;
+    }
+    #experiences .card .card-img-background {
+       min-height: 180px;
+    }
+    .section {
+       padding-left: 0px;
+       padding-right: 0px;
+     }
+     .section-body {
+       padding: 0px 10px;
+     }
+     #profile-container {
+         margin-left: 0px;
+         max-width: 340px;
+     }
+     #avatar {
+         height: 340px;
+         width: 340px;
+         margin-bottom: 20px;
+     }
+     footer .puc-logo {
+         display: none;
+     }
+     #footer {
+       padding-left: 0px;
+       padding-right: 0px;
+     }
+     footer {
+       padding: 0px 10px;
+     }
+   
+     /*
+       Search Page
+     */
+     #search-header {
+       justify-content: center;
+     }
 }
